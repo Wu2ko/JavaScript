@@ -92,6 +92,7 @@ console.log(items)
 items.shift() // pasalina pirma
 console.log(items)
 */
+/*
 let users = "Tomas,Ieva,Tadas,Monika"
 users = users.split(',')
 console.log(users)
@@ -111,8 +112,8 @@ for (let user of users){ //of tik ant masyvo
     console.log(user);
 }
 console.log("*************************")
-
-let user = {
+*/
+/*let user = {
 
     name:"Test1",
     ermail:"te@te.com",
@@ -121,12 +122,39 @@ let user = {
 for(let item in user){
     console.log(item + ": " + user[item]);
 }
+*/
 
-let students [
+let students = [
     {
-        code: 1234,
-        firstName: "tadas",
+        code: 111,
+        firstName: "Tadas",
         lastName: "Tadauskas",
         score: 5.5
+    },
+    {
+        code: 222,
+        firstName: "Tomas",
+        lastName: "Tomauskas",
+        score: 7.5
+    },
+    {
+        code: 333,
+        firstName: "Ieva",
+        lastName: "Ievauskas",
+        score: 9.5
     }
 ]
+for (let conversion of students)
+{   //    console.log("**************")
+     //   console.log(conversion)
+     //   console.log("**************")
+        for (let individual in conversion)
+        {
+            console.log(individual + ": " + conversion[individual])
+            
+           
+        }
+        console.log("______________________________________")
+}
+
+
